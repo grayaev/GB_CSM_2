@@ -2,7 +2,7 @@
 - name: add user "ans"
   hosts: localhost
   user:
-    name: ans
+    name: 'ans'
     shell: /bin/bash
     groups: admins
     append: yes
