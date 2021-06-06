@@ -7,9 +7,9 @@
   copy:
     src: ../../files/nginx
     dest: /etc/nginx/sites-enabled/default
-  become: true
+  become: yes
 - name: restart nginx
   service:
     name: nginx
     state: restarted
-  become: true
+  become: yes

@@ -5,4 +5,4 @@
     shell: /sbin/bash
     append: yes
     state: present
-  become: true
+  become: yes
