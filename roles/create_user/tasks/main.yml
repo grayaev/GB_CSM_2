@@ -1,7 +1,7 @@
 ---
 - name: Add user "ans"
   user:
-    name: ans
+    name: "{{ add_user }}"
     shell: /sbin/bash
     append: yes
     state: present
