@@ -1,7 +1,7 @@
 ---
 - name: Test garyaev
   hosts: localhost
-  tasks
+  tasks:
     become: yes
     user:
       name: garyaev
