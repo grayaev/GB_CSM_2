@@ -2,8 +2,8 @@
 - name: add user ans
   hosts: localhost
   become: yes
-  tasks:
-    - shell: useradd ans
+  roles:
+    - role: create_user
 
 - name: roles create file application.json
   hosts: localhost

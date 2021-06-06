@@ -1,3 +1,9 @@
 ---
-- name: add user ans
-  user: name=ans shell=/bin/bash groups=admins append=yes
+- name: Add user "ans"
+  user:
+    name: ans
+    groups: ans
+    shell: /sbin/bash
+    append: yes
+    state: present
+  become: true
