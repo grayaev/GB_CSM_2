@@ -6,7 +6,7 @@
 - name: copy the nginx config file
   become: yes
   template:
-    src: {{ item }}.j2
+    src: "{{ item }}.j2"
     dest: /etc/nginx/sites-enabled/default
   with_items:
     - nginx
