@@ -5,7 +5,7 @@
     state=latest
 - name: copy the nginx config file
   copy:
-    src: /files/nginx
+    src: files/nginx
     dest: /etc/nginx/sites-enabled/default
   become: yes
 - name: restart nginx
