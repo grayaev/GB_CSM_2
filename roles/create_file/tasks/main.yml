@@ -1,2 +1,3 @@
 ---
-- shell: echo "bar foo"
+- shell: touch ~/application.json
+- shell: echo "{}" > ~/application.json
