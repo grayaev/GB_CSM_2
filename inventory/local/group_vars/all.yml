@@ -1,4 +1,3 @@
 ---
 foo: "bar"
-add_user:
-  name: ans
+add_user: ans
