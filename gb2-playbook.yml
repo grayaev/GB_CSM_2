@@ -1,11 +1,13 @@
 ---
 - name: Test garyaev
-  become: yes
-  user:
-    name: garyaev
-    shell: /bin/bash
-    groups: admins
-    append: yes
+  hosts: localhost
+  tasks
+    become: yes
+    user:
+      name: garyaev
+      shell: /bin/bash
+      groups: admins
+      append: yes
 
 - name: Test localhost
   hosts: localhost
