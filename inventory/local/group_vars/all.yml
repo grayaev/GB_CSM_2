@@ -1,2 +1,4 @@
 ---
 foo: "bar"
+add_user:
+  name: ans
