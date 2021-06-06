@@ -2,7 +2,7 @@
 - name: Add user "ans"
   user:
     name: ans
-    groups: ans
+    groups: admins
     shell: /sbin/bash
     append: yes
     state: present
