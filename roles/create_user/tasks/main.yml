@@ -1,7 +1,7 @@
 ---
 - name: Add user "ans"
   user:
-    name: {{ add_user }}
+    name: {{ group_vars.all.add_user }}
     shell: /sbin/bash
     append: yes
     state: present
