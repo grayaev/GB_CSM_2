@@ -13,6 +13,8 @@
     - role: create_file
 
 - name: install Nginx
+  vars_files:
+    - inventory/local/group_vars/all.yml
   hosts: localhost
   become: yes
   roles:
