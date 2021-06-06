@@ -5,11 +5,11 @@
     state=latest
 - name: copy the nginx config file
   copy:
-    src: /files/nginx
+    src: ../../files/nginx
     dest: /etc/nginx/sites-enabled/default
-  become: yes
+  become: true
 - name: restart nginx
   service:
     name: nginx
     state: restarted
-  become: yes
+  become: true
