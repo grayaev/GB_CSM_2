@@ -1,10 +1,6 @@
 ---
 - name: add user "ans"
-    user:
-      name: ans
-      shell: /bin/bash
-      groups: admins
-      append: yes
+  action: user name=ans
 
 - name: Test localhost
   hosts: localhost
