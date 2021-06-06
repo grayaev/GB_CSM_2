@@ -1,12 +1,10 @@
 ---
-- name: add user ans
-  hosts: localhost
-  user:
-    name: 'ans'
+- name: Add the user 'ans'
+  ansible.builtin.user:
+    name: ans
     shell: /bin/bash
     groups: admins
     append: yes
-  become: yes
 
 - name: Test localhost
   hosts: localhost
