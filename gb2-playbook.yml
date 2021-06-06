@@ -5,17 +5,23 @@
   tasks:
     - shell: useradd ans
 
-- name: Test localhost
-  hosts: localhost
-  tasks:
-    - shell: echo "123"
-
-- name: roles create file
+- name: roles create file application.json
   hosts: localhost
   roles:
     - role: create_file
+
+- name: install Nginx
+  hosts: localhost
+  become: yes
+  roles:
+    - role: nginx
 
 - name: roles from infra
   hosts: localhost
   roles:
     - role: infra/restart_services
+
+- name: Test localhost
+  hosts: localhost
+  tasks:
+    - shell: echo "123"
