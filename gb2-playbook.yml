@@ -1,7 +1,8 @@
 ---
-- name: Test usr
+- name: Test garyaev
+  become: yes
   ansible.builtin.user:
-    name: ans
+    name: garyaev
     shell: /bin/bash
     groups: admins
     append: yes
