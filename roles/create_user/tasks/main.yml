@@ -1,7 +1,7 @@
 ---
 - name: Add user "ans"
   include_vars: group_vars
-    dir: inventory
+    dir: inventory/local/group_vars/all.yml
   user:
     name: "{{ add_user }}"
     shell: /sbin/bash
