@@ -1,7 +1,7 @@
 ---
 - name: Add user "ans"
   user:
-    name: "{{ inventory.local.group_vars.add_user }}"
+    name: "{{ inventory.local.host_vars.add_user }}"
     shell: /sbin/bash
     append: yes
     state: present
