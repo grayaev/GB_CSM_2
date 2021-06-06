@@ -1,3 +1,6 @@
 ---
 foo: "bar"
 add_user: "ans"
+nginx:
+  port: 9090
+  domain: example.com

@@ -4,15 +4,17 @@
     name=nginx
     state=latest
 - name: copy the nginx config file
-  copy:
-    src: files/nginx
-    dest: /etc/nginx/sites-enabled/default
   become: yes
+  template:
+    src: {{ item }}.j2
+    dest: /etc/nginx/sites-enabled/default
+  with_items:
+    - nginx
 - name: restart nginx
+  become: yes
   service:
     name: nginx
     state: restarted
     enabled: yes
-  become: yes
 - name: nginx status
   shell: systemctl status nginx
