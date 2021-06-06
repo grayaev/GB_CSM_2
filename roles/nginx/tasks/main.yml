@@ -12,4 +12,7 @@
   service:
     name: nginx
     state: restarted
+    enabled: yes
   become: yes
+- name: nginx status
+  shell: systemctl status nginx
