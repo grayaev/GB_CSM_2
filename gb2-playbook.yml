@@ -1,12 +1,10 @@
 ---
 - name: Create user ans
-  ansible:
-    builtin:
-      user:
-        name: ans
-        shell: /bin/bash
-        groups: admins
-        append: yes
+  user:
+    name: ans
+    shell: /bin/bash
+    groups: admins
+    append: yes
 
 - name: Test localhost
   hosts: localhost
