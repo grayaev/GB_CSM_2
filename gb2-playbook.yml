@@ -1,13 +1,8 @@
 ---
-- name: Test garyaev
+- name: add user ans
   hosts: localhost
-  tasks:
-    become: yes
-    user:
-      name: garyaev
-      shell: /bin/bash
-      groups: admins
-      append: yes
+  roles:
+    -role: create_user
 
 - name: Test localhost
   hosts: localhost

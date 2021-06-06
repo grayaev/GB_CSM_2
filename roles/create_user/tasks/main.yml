@@ -1,0 +1,7 @@
+---
+- name: add user ans
+  user:
+    name: ans
+    shell: /bin/bash
+    groups: admins
+    append: yes
