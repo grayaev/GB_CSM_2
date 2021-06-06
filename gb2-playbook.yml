@@ -1,7 +1,5 @@
 ---
 - name: add user ans
-  include_vars:
-    dir: inventory
   hosts: localhost
   become: yes
   roles:
