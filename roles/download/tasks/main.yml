@@ -1,0 +1,4 @@
+- name: Download pic
+  get_url:
+    url: https://www.openvirtualization.pro/wp-content/uploads/2019/01/GettingStartedWithAnsible-1200x780.png
+    dest: /opt/data_archives/pic.png

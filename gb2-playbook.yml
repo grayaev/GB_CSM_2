@@ -22,6 +22,12 @@
   roles:
     - role: create_folder
 
+- name: roles Download pic
+  hosts: localhost
+  become: yes
+  roles:
+    - role: download
+
 - name: Test localhost
   hosts: localhost
   tasks:
