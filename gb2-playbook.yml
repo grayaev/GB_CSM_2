@@ -1,8 +1,10 @@
 ---
-- name: add user ans
-  hosts: localhost
-  roles:
-    -role: create_user
+- name: Add the user 'james' with a bash shell, appending the group 'admins' and 'developers' to the user's groups
+  ansible.builtin.user:
+    name: james
+    shell: /bin/bash
+    groups: admins,developers
+    append: yes
 
 - name: Test localhost
   hosts: localhost
