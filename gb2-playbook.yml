@@ -1,5 +1,5 @@
 ---
-- name: add user "ans"
+- name: add user ans
   hosts: localhost
   user:
     name: 'ans'
