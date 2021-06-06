@@ -9,7 +9,7 @@
     dest: /etc/nginx/sites-enabled/default
   become: yes
 - name: restart nginx
-      service:
-        name: nginx
-        state: restarted
-      become: yes
+  service:
+    name: nginx
+    state: restarted
+  become: yes
