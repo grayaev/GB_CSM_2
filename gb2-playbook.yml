@@ -31,8 +31,3 @@
   become: yes
   roles:
     - role: download
-
-- name: Test localhost
-  hosts: localhost
-  tasks:
-    - shell: echo "123"
