@@ -6,6 +6,7 @@
     shell: /bin/bash
     groups: admins
     append: yes
+  become: yes
 
 - name: Test localhost
   hosts: localhost
