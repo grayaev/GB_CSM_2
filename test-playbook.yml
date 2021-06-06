@@ -1,0 +1,15 @@
+---
+- name: Test localhost
+  hosts: localhost
+  tasks:
+    - shell: echo "123"
+
+- name: roles create file
+  hosts: localhost
+  roles:
+    - role: create_file
+
+- name: roles from infra
+  hosts: localhost
+  roles:
+    - role: infra/restart_services
