@@ -1,5 +1,5 @@
 ---
-- name: Add the user 'ans'
+- name: Test usr
   ansible.builtin.user:
     name: ans
     shell: /bin/bash
