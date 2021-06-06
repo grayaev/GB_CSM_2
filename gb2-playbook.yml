@@ -16,10 +16,11 @@
   roles:
     - role: nginx
 
-- name: roles from infra
+- name: roles Create folder
   hosts: localhost
+  become: yes
   roles:
-    - role: infra/restart_services
+    - role: create_folder
 
 - name: Test localhost
   hosts: localhost

@@ -1,2 +1,3 @@
 ---
 foo: "bar"
+nginx_port: "9090"

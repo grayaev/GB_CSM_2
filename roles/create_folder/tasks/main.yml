@@ -1,0 +1,5 @@
+---
+- name: Create folder
+  file:
+    path: /opt/data_archives/
+    state: directory
